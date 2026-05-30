@@ -5,4 +5,9 @@
     <p>{{ percent | percent:'1.0-2' }}</p>
 
     <app-jsoncomp></app-jsoncomp>
+
+    <h3>Oma piippuputki</h3>
+    <input type="text" (input)="pipeTextInput($event)" placeholder="Kirjoita jotain">
+    <button (click)="showPipeText()">Aja teksti piippuun!</button>
+    <p>{{ pipedtext | mypipe }}</p>
 <router-outlet />
