@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CurrencyPipe, DatePipe, PercentPipe, UpperCasePipe } from '@angular/common';
+import { Jsoncomp } from './jsoncomp/jsoncomp';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CurrencyPipe, DatePipe, PercentPipe, UpperCasePipe],
+  imports: [RouterOutlet, CurrencyPipe, DatePipe, PercentPipe, UpperCasePipe, Jsoncomp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
